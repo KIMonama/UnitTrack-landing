@@ -41,7 +41,7 @@
               class="nav-link text-white-50 px-2 px-md-3 small fw-bold text-uppercase ls-1"
               href="#whyYouNeedUs"
             >
-              The Advantage
+              Benefits
             </a>
           </li>
           <li class="nav-item">
@@ -91,7 +91,7 @@
               class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4"
             >
               <button
-                onclick="document.getElementById('whyYouNeedUs').scrollIntoView({behavior: 'smooth'})"
+                onclick="document.getElementById('earlyAccess').scrollIntoView({behavior: 'smooth'})"
                 class="btn btn-light btn-lg text-primary fw-bold px-5 rounded-pill shadow-lg"
               >
                 Get Priority Access
@@ -274,7 +274,7 @@
               </ul>
               <div class="d-grid">
                 <a
-                  href="/public/get-started.html"
+                  href="#earlyAccess"
                   class="btn btn-primary btn-lg rounded-pill fw-bold py-3 shadow"
                 >
                   Reserve My Spot
@@ -401,7 +401,7 @@
               </div>
               <ul class="list-unstyled my-4 small fw-medium">
                 <li class="mb-2">1 Property</li>
-                <li class="mb-2">5 Units</li>
+                <li class="mb-2">Max 5 Units</li>
               </ul>
               <button
                 class="btn btn-outline-primary rounded-pill w-100 mt-auto"
@@ -425,7 +425,7 @@
               </div>
               <ul class="list-unstyled my-4 small fw-medium">
                 <li class="mb-2">Up to 2 Properties</li>
-                <li class="mb-2">20 Units</li>
+                <li class="mb-2">Max 20 Units</li>
               </ul>
               <button
                 class="btn btn-primary rounded-pill w-100 mt-auto shadow-sm"
@@ -469,7 +469,7 @@
                 R599<span class="fs-6 fw-normal opacity-75">/Month</span>
               </div>
               <ul class="list-unstyled my-4 small fw-medium text-white">
-                <li class="mb-2">10 Properties</li>
+                <li class="mb-2">Up to 10 Properties</li>
                 <li class="mb-2">Unlimited Units</li>
               </ul>
               <button
@@ -482,7 +482,117 @@
         </div>
       </div>
     </section>
+    <section id="earlyAccess" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase ls-1">
+              Join the Founder's Club
+            </h6>
+            <h2 class="fw-black display-5 mb-3">Get Priority Access</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px">
+              Get on the list early to secure your 3 months of free service.
+              Help us build a system that works exactly the way you need it to.
+            </p>
+          </div>
 
+          <div class="col-lg-10">
+            <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 bg-white">
+              <form
+                name="early-access"
+                method="POST"
+                data-netlify="true"
+                action="success.html"
+              >
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Full Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control rounded-pill"
+                      placeholder="e.g. Sipho Nkosi"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control rounded-pill"
+                      placeholder="name@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Phone Number</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control rounded-pill"
+                      placeholder="081 234 5678"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold"
+                      >Property Type</label
+                    >
+                    <select
+                      name="property-type"
+                      class="form-select rounded-pill"
+                      required
+                    >
+                      <option value="" disabled selected>Select Type</option>
+                      <option value="apartments">Apartments / Flats</option>
+                      <option value="student">Student Housing</option>
+                      <option value="backrooms">Township Backrooms</option>
+                      <option value="commercial">Commercial</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold"
+                      >How many Properties?</label
+                    >
+                    <input
+                      type="number"
+                      name="property-count"
+                      class="form-control rounded-pill"
+                      placeholder="e.g. 2"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold"
+                      >Max Number of Units</label
+                    >
+                    <input
+                      type="number"
+                      name="unit-count"
+                      class="form-control rounded-pill"
+                      placeholder="e.g. 15"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg rounded-pill fw-bold px-5 py-3 shadow"
+                    >
+                      Reserve My Priority Spot
+                      <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="bg-dark text-white py-5 border-top border-secondary">
       <div class="container text-center">
         <h3 class="fw-black mb-4">
